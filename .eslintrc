@@ -44,7 +44,6 @@
         "unnecessary": false
       }
     ],
-    "@typescript-eslint/explicit-function-return-type": "error",
     "no-multiple-empty-lines": [
       "error",
       {
