@@ -1,0 +1,17 @@
+{
+  "aboutMe": {
+    "shortInfo": {
+      "title": "I am full-stack web developer",
+      "name": "Name",
+      "language": "Language",
+      "education": "Education",
+      "experience": "Experience",
+      "values": {
+        "name": "Andrii Polishchuk",
+        "language": "Ukrainian - native\nEnglish - B1+",
+        "education": "DTEU - 2021 to date\nSoftware Engineer",
+        "experience": "1 year free lance\n2 years in commercial"
+      }
+    }
+  }
+}
