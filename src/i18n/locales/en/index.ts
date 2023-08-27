@@ -1,7 +1,9 @@
 import welcome from './en.welcome.json';
 import aboutMe from './en.aboutme.json';
 
-export default {
+const enLocale = {
   ...welcome,
   ...aboutMe,
 };
+
+export default enLocale;

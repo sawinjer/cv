@@ -31,6 +31,7 @@ export const RunningText = React.forwardRef<HTMLDivElement, Props>(({ velocity =
     clamp: false,
   });
   const x = useTransform(baseX, (v) => `${wrap(-60, 60, v)}%`);
+
   useAnimationFrame((_, delta) => {
     let moveBy = velocity * (delta / 1000);
 
