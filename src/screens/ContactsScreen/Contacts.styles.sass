@@ -1,0 +1,32 @@
+@use '@/colors'
+
+.contacts-section
+  display: flex
+  gap: 24px
+  align-items: center
+  justify-content: space-between
+  padding: 24px 48px
+  flex-wrap: wrap
+  margin: 24px
+  color: colors.$main_text
+  & .contacts-title
+    text-transform: uppercase
+    font-weight: bold
+  & .contacts-icons-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    gap: 25px
+    & .contact-icon
+      position: relative
+      height: 45px
+      aspect-ratio: 1/1
+      & img
+        position: absolute
+        height: 100%
+        top: 0
+        fill: colors.$icon_color
+        transition: 0.3s transform
+        &:hover
+          transform: translateY(-5px) scale(1.1)

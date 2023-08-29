@@ -1,0 +1,54 @@
+@use '@/colors'
+
+.skills-screen
+  min-height: 100vh
+  display: flex
+  gap: min(54px, 5vw)
+  justify-content: space-between
+  padding: 32px
+  flex-wrap: wrap
+  position: relative
+  & .skill-box
+    position: relative
+    width: 200px
+    height: 200px
+    @media screen and (max-width: 491px)
+      width: 100%
+    & .skill-box-content
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      display: flex
+      padding-top: 44px
+      justify-content: center
+      transition: 0.3s
+
+      & > img
+        max-height: 112px
+        max-width: 112px
+      & .skill-description
+        position: absolute
+        left: 10px
+        right: 10px
+        bottom: 20px
+        opacity: 0
+        transition: 0.3s
+        & .skill-description-content
+          padding: 0 10px
+          display: flex
+          align-items: center
+          justify-content: space-between
+          & .skill-title, & .skill-level, &.skill-link
+            color: colors.$main_text
+            text-transform: uppercase
+          & .skill-title
+            font-weight: bold
+          & .skill-link
+            text-decoration: none
+      &:hover
+        bottom: -50px
+        z-index: 10
+        & .skill-description
+          opacity: 1

@@ -1,5 +1,6 @@
 {
   "aboutMe": {
+    "title": "About me",
     "shortInfo": {
       "title": "I am full-stack web developer",
       "name": "Name",
@@ -12,6 +13,7 @@
         "education": "DTEU - 2021 to date\nSoftware Engineer",
         "experience": "1 year free lance\n2 years in commercial"
       }
-    }
+    },
+    "myPhotoImgAlt": "Andrii Polishchuk photo"
   }
 }

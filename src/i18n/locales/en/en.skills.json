@@ -1,0 +1,11 @@
+{
+  "skills": {
+    "title": "Skills",
+    "level": {
+      "Beginner": "Beginner",
+      "Competent": "Competent",
+      "Advanced": "Advanced"
+    },
+    "skillLinkText": "more"
+  }
+}

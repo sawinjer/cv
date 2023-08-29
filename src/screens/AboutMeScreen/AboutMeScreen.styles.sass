@@ -1,11 +1,58 @@
+@use '@/colors'
+
 .about-me-screen
-  height: 100vh
-  padding: 0 87px
-  gap: 87px
+  position: relative
+  $spacing: min(87px, 10vw)
+  padding: $spacing
+  gap: $spacing
   display: flex
+  flex-wrap: wrap
   align-items: center
   justify-content: center
 
+
   & .short-info
-    height: 570px
+    height: 560px
+    padding: 45px
     flex: 1
+    display: flex
+    flex-direction: column
+    gap: 36px
+
+    & .short-info-title
+      font-size: 31px
+      font-weight: bold
+
+    & .short-info__row
+      display: flex
+      flex-direction: column
+      border-bottom: 2px solid colors.$main_text
+      padding-bottom: 5px
+      min-width: min(334px, 80vw)
+
+      & .short-info__row-value
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        width: 100%
+
+        & span
+          font-weight: bold
+          font-size: 22px
+
+      & .short-info__row-title
+        font-weight: bold
+        font-size: 22px
+        color: colors.$main_text
+
+  & .my-photo-wrapper
+    flex: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    min-width: min(387px, 80vw)
+    border-radius: 27px
+
+    & img
+      border-radius: 27px

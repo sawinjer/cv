@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "checkSrc": "Check source code",
+    "title": "My pet project - F5 Remont",
+    "description": "It is a CRM system for managing the mobile technique repair process. For the UI React was used as a central library with redux as the state manager. For the server side express.js was picked as a quick and simple solution, Prisma.js as the ORM system, and socket io for creating a special websocket API to provide the possibility of making a microservice architecture. As the testing library here I used Jest and for e2e testing, I used Cypress",
+    "bot": {
+      "title": "Telegram bot",
+      "description": "Using websocket API was implemented telegram bot for notification functionality."
+    },
+    "slideAlt": "Slide no {{slideNo}}"
+  }
+}

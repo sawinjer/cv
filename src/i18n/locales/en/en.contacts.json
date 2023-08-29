@@ -1,0 +1,12 @@
+{
+  "contacts": {
+    "contactMe": "Contact Me",
+    "alt": {
+      "email": "Email Link",
+      "linkedIn": "Linkedin Link",
+      "gitlab":  "Gitlab Link",
+      "github": "Github Link",
+      "telegram":  "Telegram Link"
+    }
+  }
+}

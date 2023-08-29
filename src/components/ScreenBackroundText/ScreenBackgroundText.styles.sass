@@ -1,0 +1,22 @@
+@use "@/colors"
+
+.screen-background-text
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: -1
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow-x: hidden
+  overflow-y: visible
+  & .screen-background-text__text_wrapper
+    transform: rotateZ(330deg)
+    & .screen-background-text__title
+      color: colors.$light_text
+      font-weight: bold
+      font-size: 24rem
+      text-transform: uppercase
+
