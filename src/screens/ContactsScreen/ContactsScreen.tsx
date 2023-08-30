@@ -7,12 +7,21 @@ import githubIcon from '@assets/icons/githubIcon.svg';
 import telegramIcon from '@assets/icons/telegramIcon.svg';
 import { useTranslation } from 'react-i18next';
 import { GlassCard } from '@/components/GlassCard/GlassCard.tsx';
+import { motion, Variants } from 'framer-motion';
 
 export const ContactsScreen: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <GlassCard className="contacts-section">
+    <GlassCard className="contacts-section" initial="offScreen" whileInView="onScreen" viewport={{ once: true }}>
+      <motion.div
+        className="light-blink"
+        variants={lighBlickVariants}
+        transition={{
+          duration: 1,
+          ease: 'easeInOut',
+        }}
+      />
       <h2 className="contacts-title">{t`contacts.contactMe`}</h2>
       <div className="contacts-icons-wrapper">
         <a className="contact-icon" href="mailto:polisukandrij68@gmail.com">
@@ -33,4 +42,16 @@ export const ContactsScreen: React.FC = () => {
       </div>
     </GlassCard>
   );
+};
+
+const lighBlickVariants: Variants = {
+  offScreen: {
+    x: -100,
+    rotateZ: -45,
+    width: 90,
+  },
+  onScreen: {
+    x: window.innerWidth,
+    width: 20,
+  },
 };

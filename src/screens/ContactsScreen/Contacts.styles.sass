@@ -1,6 +1,7 @@
 @use '@/colors'
 
 .contacts-section
+  position: relative
   display: flex
   gap: 24px
   align-items: center
@@ -9,24 +10,37 @@
   flex-wrap: wrap
   margin: 24px
   color: colors.$main_text
+  overflow: hidden
+
+  & .light-blink
+    position: absolute
+    height: 500px
+    left: 0
+    width: 50px
+    background: rgba(255, 255, 255, 0.8)
+
   & .contacts-title
     text-transform: uppercase
     font-weight: bold
+
   & .contacts-icons-wrapper
     display: flex
     align-items: center
     justify-content: center
     flex-wrap: wrap
     gap: 25px
+
     & .contact-icon
       position: relative
       height: 45px
       aspect-ratio: 1/1
+
       & img
         position: absolute
         height: 100%
         top: 0
         fill: colors.$icon_color
         transition: 0.3s transform
+
         &:hover
           transform: translateY(-5px) scale(1.1)
