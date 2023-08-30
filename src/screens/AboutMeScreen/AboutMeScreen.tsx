@@ -17,7 +17,7 @@ export const AboutMeScreen: React.FC = () => {
       <motion.div
         initial="offScreen"
         whileInView="onScreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true }}
         className="my-photo-wrapper"
         variants={photoVariant}
       >
@@ -27,7 +27,7 @@ export const AboutMeScreen: React.FC = () => {
         className="short-info"
         initial="offScreen"
         whileInView="onScreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true }}
         variants={descriptionVariants}
       >
         <h2 className="short-info-title">{t`aboutMe.shortInfo.title`}</h2>
