@@ -16,7 +16,7 @@ export const ContactsScreen: React.FC = () => {
     <GlassCard className="contacts-section" initial="offScreen" whileInView="onScreen" viewport={{ once: true }}>
       <motion.div
         className="light-blink"
-        variants={lighBlickVariants}
+        variants={lightBlinkVariants}
         transition={{
           duration: 1,
           ease: 'easeInOut',
@@ -24,7 +24,7 @@ export const ContactsScreen: React.FC = () => {
       />
       <h2 className="contacts-title">{t`contacts.contactMe`}</h2>
       <div className="contacts-icons-wrapper">
-        <a className="contact-icon" href="mailto:polisukandrij68@gmail.com">
+        <a className="contact-icon" href="mailto:hello@sawinjer.xyz">
           <img src={emailIcon} alt={t('contacts.alt.email')} />
         </a>
         <a className="contact-icon" href="https://www.linkedin.com/in/sawinjer/">
@@ -44,7 +44,7 @@ export const ContactsScreen: React.FC = () => {
   );
 };
 
-const lighBlickVariants: Variants = {
+const lightBlinkVariants: Variants = {
   offScreen: {
     x: -100,
     rotateZ: -45,
