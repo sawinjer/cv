@@ -24,7 +24,7 @@ export const ContactsScreen: React.FC = () => {
       />
       <h2 className="contacts-title">{t`contacts.contactMe`}</h2>
       <div className="contacts-icons-wrapper">
-        <a className="contact-icon" href="mailto:hello@sawinjer.xyz">
+        <a className="contact-icon" href="mailto:polisukandrij68@mail.com">
           <img src={emailIcon} alt={t('contacts.alt.email')} />
         </a>
         <a className="contact-icon" href="https://www.linkedin.com/in/sawinjer/">
