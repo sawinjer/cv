@@ -20,4 +20,8 @@ export default defineConfig({
       '@assets': path.resolve(__dirname, './src/assets'),
     },
   },
+  preview: {
+    port: 3000,
+    host: true,
+  },
 });
